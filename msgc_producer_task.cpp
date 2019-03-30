@@ -7,7 +7,7 @@ void* test_rt_queue_with_nonRTthread_fun(void* );
 
 void  msgc_producer_init()
 {
-    int ret = pthread_create(&test_rtqueue_nonRTthread_id, NULL, msgc_producer_task_proc, NULL);//开始S形速度规划
+    int ret = pthread_create(&test_rtqueue_nonRTthread_id, NULL, msgc_producer_task_proc, NULL);
 
     if (ret)
     {
